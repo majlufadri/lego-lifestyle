@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brick by Brick: The Lego Art Hub - DIY</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <!-- Google Fonts: Bubblegum Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
+      rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Bubblegum Sans", sans-serif;
+        background-color: #f0f2f5;
+        color: #333;
+      }
+      .navbar {
+        background-color: #e30613; /* LEGO red */
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      .navbar-brand,
+      .nav-link {
+        color: #fff !important;
+        font-size: 1.5rem;
+      }
+      .navbar-brand:hover,
+      .nav-link:hover {
+        color: #ffca28 !important; /* LEGO yellow */
+      }
+      .diy-section img {
+        max-width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border: 3px solid #0033cc; /* LEGO blue */
+        border-radius: 10px;
+      }
+      .diy-section .card {
+        border: none;
+        transition: transform 0.3s;
+      }
+      .diy-section .card:hover {
+        transform: scale(1.05);
+      }
+      .contact-form {
+        background-color: #ffca28; /* LEGO yellow */
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .btn-download {
+        background-color: #009639; /* LEGO green */
+        color: #fff;
+        border: none;
+      }
+      .btn-download:hover {
+        background-color: #00732e;
+      }
+      footer {
+        background-color: #0033cc; /* LEGO blue */
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      @media (max-width: 768px) {
+        .diy-section img {
+          height: 150px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Brick by Brick</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="diy.html">DIY</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- DIY Page -->
+    <main id="diy" class="py-5">
+      <div class="container">
+        <header>
+          <h2>DIY Lego Projects</h2>
+          <p>Try these fun builds at home with our step-by-step guides!</p>
+        </header>
+        <article class="diy-section mb-5">
+          <h3>Build 1: Robo Car (LEGO Classic 1260)</h3>
+          <div class="row">
+            <div class="col-md-9">
+              <div class="card">
+                <div class="card-body">
+                  <p>
+                    Build a futuristic Robo Car with rolling wheels and a sleek
+                    design, perfect for LEGO Classic fans.
+                  </p>
+                  <ol>
+                    <li>Start with a 4x8 flat plate as the base.</li>
+                    <li>
+                      Attach 4 wheel pieces to the underside for mobility.
+                    </li>
+                    <li>
+                      Build the body using 2x4 gray bricks for a robotic look.
+                    </li>
+                    <li>Add a 2x2 clear piece as a cockpit window.</li>
+                    <li>
+                      Decorate with small red and blue bricks for details.
+                    </li>
+                  </ol>
+                  <a
+                    href="assets/BrickRoboCar.pdf"
+                    class="btn btn-download mt-2"
+                    download
+                    >Download Full Guide</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img src="./asserts/diy2.png" alt="Robo Car" />
+            </div>
+          </div>
+        </article>
+        <article class="diy-section mb-5">
+          <h3>Build 2: Brick Building (LEGO Classic 10696)</h3>
+          <div class="row">
+            <div class="col-md-2">
+              <img src="asserts/diy1.png" alt="Brick Building" />
+            </div>
+            <div class="col-md-10">
+              <div class="card">
+                <div class="card-body">
+                  <p>
+                    Create a colorful Brick Building, ideal for beginners to
+                    showcase their creativity.
+                  </p>
+                  <ol>
+                    <li>Use a 6x6 green plate as the foundation.</li>
+                    <li>Stack 2x4 yellow bricks to form the walls.</li>
+                    <li>Add 2x2 red bricks for window frames.</li>
+                    <li>Top with a 4x4 blue plate as the roof.</li>
+                    <li>Decorate with small white bricks for accents.</li>
+                  </ol>
+                  <a
+                    href="./asserts/buildingHouse.png"
+                    class="btn btn-download mt-2"
+                    download
+                    >Download Full Guide</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="contact-form">
+          <h3>Share Your Creation!</h3>
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label"
+                >Describe Your Build</label
+              >
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>© 2025 Brick by Brick: The Lego Art Hub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Form submission
+      document.getElementById("contactForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Thanks for sharing your build! We’ll check it out!");
+        e.target.reset();
+        window.location.href = "/index.html";
+      });
+    </script>
+  </body>
+</html>
